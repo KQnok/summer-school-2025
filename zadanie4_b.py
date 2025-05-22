@@ -2,10 +2,10 @@ import numpy as np
 
 def analytical_solution(p, N):
     P = np.array([
-        [0, p, 0, 1 - p],  # из 0
-        [1 - p, 0, p, 0],  # из 1
-        [0, 1 - p, 0, p],  # из 2
-        [p, 0, 1 - p, 0]  # из 3
+        [0, p, 0, 1 - p],
+        [1 - p, 0, p, 0],
+        [0, 1 - p, 0, p],
+        [p, 0, 1 - p, 0]
     ])
 
     state = np.array([1, 0, 0, 0])
