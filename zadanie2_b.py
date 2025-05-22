@@ -67,6 +67,8 @@ while True:
 
 print(f'Game over! Your final score is: {final_score}'"""
 
+
+
 import requests
 
 def is_valid_english_word(word):
@@ -131,17 +133,14 @@ def play_spelling_bee(letters, center_letter):
             print(f"Invalid: {message}")
             continue
 
-        # Check if word exists in dictionary
         if not is_valid_english_word(word):
             print("Word not found in dictionary")
             continue
 
-        # Check if already used
         if word in used_words:
             print("You already used this word")
             continue
 
-        # Calculate points
         points = calculate_points(word)
         score += points
         used_words.add(word)
