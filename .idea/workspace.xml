@@ -4,20 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c889cebe-daf6-4c98-bf19-f9ac35d46ec4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Summerschool2025.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stopwords.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zadanie1_b.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zadanie2_b.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zadanie3_b.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zadanie4_b.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zadanie5_b.py" afterDir="false" />
+    <list default="true" id="c889cebe-daf6-4c98-bf19-f9ac35d46ec4" name="Changes" comment="-sample">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadanie1_b.py" beforeDir="false" afterPath="$PROJECT_DIR$/zadanie1_b.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadanie2_b.py" beforeDir="false" afterPath="$PROJECT_DIR$/zadanie2_b.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadanie3_b.py" beforeDir="false" afterPath="$PROJECT_DIR$/zadanie3_b.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadanie4_b.py" beforeDir="false" afterPath="$PROJECT_DIR$/zadanie4_b.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,19 +41,22 @@
     "Python.zadanie1.executor": "Run",
     "Python.zadanie1_b.executor": "Run",
     "Python.zadanie2.executor": "Run",
+    "Python.zadanie2_b.executor": "Run",
     "Python.zadanie3.executor": "Run",
+    "Python.zadanie3_b.executor": "Run",
     "Python.zadanie4_b.executor": "Run",
     "Python.zadanie5_b.executor": "Run",
     "Python.адщшв.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/USER/PycharmProjects/PythonProject",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.intellij.jupyter.py.connections.configurable.JupyterServersConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -87,17 +82,61 @@
       <updated>1747394165571</updated>
       <workItem from="1747394166499" duration="11042000" />
       <workItem from="1747731452159" duration="12212000" />
-      <workItem from="1747908565255" duration="4511000" />
+      <workItem from="1747908565255" duration="7922000" />
     </task>
+    <task id="LOCAL-00001" summary="-base level">
+      <option name="closed" value="true" />
+      <created>1747937864846</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1747937864846</updated>
+    </task>
+    <task id="LOCAL-00002" summary="-pro 2">
+      <option name="closed" value="true" />
+      <created>1747939594492</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1747939594492</updated>
+    </task>
+    <task id="LOCAL-00003" summary="-sample">
+      <option name="closed" value="true" />
+      <created>1747939716063</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1747939716063</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="-base level" />
+    <MESSAGE value="-pro 2" />
+    <MESSAGE value="-sample" />
+    <option name="LAST_COMMIT_MESSAGE" value="-sample" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Summerschool2025$.coverage" NAME="адщшв Coverage Results" MODIFIED="1747922523791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Summerschool2025$zadanie1_b.coverage" NAME="zadanie1_b Coverage Results" MODIFIED="1747937230497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Summerschool2025$zadanie1_b.coverage" NAME="zadanie1_b Coverage Results" MODIFIED="1747940930886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Summerschool2025$zadanie3.coverage" NAME="zadanie3 Coverage Results" MODIFIED="1747734483611" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Summerschool2025$zadanie2_b.coverage" NAME="zadanie2_b Coverage Results" MODIFIED="1747939442513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Summerschool2025$zadanie3_b.coverage" NAME="zadanie3_b Coverage Results" MODIFIED="1747940741125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Summerschool2025$zadanie5_b.coverage" NAME="zadanie5_b Coverage Results" MODIFIED="1747937094177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Summerschool2025$zadanie4_b.coverage" NAME="zadanie4_b Coverage Results" MODIFIED="1747937297922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Summerschool2025$zadanie1.coverage" NAME="zadanie1 Coverage Results" MODIFIED="1747741902232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
