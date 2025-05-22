@@ -1,4 +1,4 @@
-print('Welcome to Spelling Bee!\n'
+"""print('Welcome to Spelling Bee!\n'
       'Today\'s letters are ACILMTY and the letter of the day is T\n'
       'Feel free to press XXXXX when you\'re done playing')
 
@@ -65,7 +65,119 @@ while True:
     final_score += points
     print(f'Cool! You found the word  "{suggested_word}" you earned {points} points')
 
-print(f'Game over! Your final score is: {final_score}')
+print(f'Game over! Your final score is: {final_score}'"""
+
+import requests
+
+def is_valid_english_word(word):
+    try:
+        response = requests.get(
+            f"https://api.dictionaryapi.dev/api/v2/entries/en/{word.lower()}",
+            timeout=3
+        )
+        return response.status_code == 200
+    except requests.exceptions.RequestException:
+        return False
 
 
-#spellingcheck for pro
+def calculate_points(word):
+    length = len(word)
+    if length == 4:
+        return 1
+    elif 5 <= length <= 7:
+        return length
+    else:
+        return length * 2
+
+
+def is_valid_word(word, letters, center_letter):
+    word = word.lower()
+    letters = [l.lower() for l in letters]
+    center_letter = center_letter.lower()
+
+    if len(word) < 4:
+        return False, "Word is too short (minimum 4 letters)"
+
+    if center_letter not in word:
+        return False, "Must contain the center letter"
+
+    for letter in word:
+        if letter not in letters:
+            return False, f"Invalid letter '{letter}'. Allowed letters: {''.join(letters).upper()}"
+
+    return True, ""
+
+
+def play_spelling_bee(letters, center_letter):
+    letters = [l.lower() for l in letters]
+    center_letter = center_letter.lower()
+
+    print(f"\nWelcome to Spelling Bee!")
+    print(f"Today's letters: {''.join(letters).upper()}")
+    print(f"Center letter: {center_letter.upper()}")
+    print("Enter words (or 'XXXXX' to quit):\n")
+
+    score = 0
+    used_words = set()
+
+    while True:
+        word = input("Your word: ").strip().lower()
+
+        if word == 'xxxxx':
+            break
+
+        is_valid, message = is_valid_word(word, letters, center_letter)
+        if not is_valid:
+            print(f"Invalid: {message}")
+            continue
+
+        # Check if word exists in dictionary
+        if not is_valid_english_word(word):
+            print("Word not found in dictionary")
+            continue
+
+        # Check if already used
+        if word in used_words:
+            print("You already used this word")
+            continue
+
+        # Calculate points
+        points = calculate_points(word)
+        score += points
+        used_words.add(word)
+
+        print(f"✓ Found '{word.upper()}'! +{points} points (Total: {score})")
+
+    print(f"\nGame over! Final score: {score}")
+    if used_words:
+        print("Your words:", ', '.join(sorted(used_words, key=lambda x: (-len(x), x))))
+
+
+import random
+from string import ascii_lowercase
+
+
+def generate_spelling_bee_letters():
+    vowels = {'a', 'e', 'i', 'o', 'u'}
+    consonants = set(ascii_lowercase) - vowels
+
+    selected_letters = random.sample(sorted(vowels), k=1)
+
+    remaining_letters = random.sample(sorted(consonants), k=6)
+    selected_letters.extend(remaining_letters)
+
+    random.shuffle(selected_letters)
+    center_letter = random.choice(selected_letters)
+
+    return sorted(selected_letters), center_letter
+
+
+def main():
+
+    letters, center_letter = generate_spelling_bee_letters()
+
+    play_spelling_bee(letters, center_letter)
+
+
+if __name__ == "__main__":
+    main()
